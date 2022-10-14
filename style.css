@@ -274,6 +274,8 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: var(--spacing-small);
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
 }
 
 .project_card {
@@ -284,6 +286,8 @@ header h1 {
 }
 .project_card h3 {
   opacity: 0;
+  pointer-events: none;
+  text-align: center;
 }
 .project_card img {
   height: 100%;
@@ -302,6 +306,9 @@ header h1 {
   flex-direction: column;
   align-items: center;
 }
+.project_text a:nth-of-type(1) {
+  color: var(--color-primary-text);
+}
 .card_link {
   cursor: pointer;
 }
@@ -319,4 +326,31 @@ header h1 {
     opacity: 1;
   } */
 
-/*  ?project section ends */ ;
+/*  ?project section ends */
+
+/* ?about me section starts */
+#about_me {
+  padding-top: var(--spacing-large);
+}
+#about_me h5 {
+  padding-bottom: var(--spacing-small);
+  color: var(--color-secondary-text);
+  margin-left: var(--spacing-xsmall);
+}
+
+/* ?about me section ends */
+
+/* ?footer section begins */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xsmall);
+  text-align: center;
+}
+
+/* ?footer section ends */
