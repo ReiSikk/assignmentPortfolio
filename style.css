@@ -383,3 +383,10 @@ footer p {
 }
 
 /* ?footer section ends */
+
+/* !Fonts and Ui components subpage begins */
+.headline span {
+  color: var(--color-primary-text);
+}
+
+/* !Fonts and Ui components subpage ends */
