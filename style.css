@@ -29,6 +29,7 @@ html {
   --color-secondary-text: #ff7d7d;
   --color-primary-text: #ffffff;
   --color-dark: #1a191d;
+  --color-dark-lighter: #201f23;
   /* !border radius for ui elements*/
   --bradius-cards: 3.5px;
 }
@@ -171,6 +172,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-bottom: var(--spacing-xsmall);
+  margin-top: 12vh;
 }
 
 /* ?scroller icon ends  */
@@ -178,7 +180,7 @@ nav {
 /* ?frame & mask begins */
 .frame {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   left: var(--spacing-medium);
   right: var(--spacing-medium);
   top: var(--spacing-medium);
@@ -217,7 +219,7 @@ nav {
 
 .mask {
   position: fixed;
-  z-index: 9;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -266,6 +268,9 @@ header span {
 }
 header h1 {
   font-size: 5.653rem;
+}
+#intro {
+  padding-top: var(--spacing-medium);
 }
 /* ?header section ends  */
 
@@ -345,12 +350,36 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark-lighter);
+  min-height: 20vh;
 }
 .footer_links {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xsmall);
   text-align: center;
+  padding-bottom: var(--spacing-medium);
+  font-family: var(--font-family_secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.footer_links a:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xsmall);
+  align-self: center;
+}
+.footer_links img {
+  max-width: 32px;
+}
+.footer_links span {
+  font-family: var(--font-family_primary);
+  text-transform: none;
+  letter-spacing: none;
+}
+footer p {
+  font-size: 14px;
 }
 
 /* ?footer section ends */
