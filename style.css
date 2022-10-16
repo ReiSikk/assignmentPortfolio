@@ -288,6 +288,9 @@ header h1 {
 #intro {
   padding-top: var(--spacing-large);
 }
+#introduction {
+  padding-top: var(--spacing-large);
+}
 .desc_heading {
   padding-bottom: var(--spacing-small);
 }
@@ -384,6 +387,7 @@ footer {
   justify-content: center;
   background-color: var(--color-dark-lighter);
   min-height: 20vh;
+  margin-top: var(--spacing-medium);
 }
 .footer_links {
   display: flex;
