@@ -6,12 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- typefaces -->
-    <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,200,300,100,600&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-    <title>Working with Colors</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,200,300,100,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Colors and Animations</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mask" id="mask">
+      <div class="mask_top"></div>
+      <div class="mask_bottom"></div>
+    </div>
+    <div class="frame" id="frame">
+      <div class="frame_line frame_line-left"></div>
+      <div class="frame_line frame_line-right"></div>
+      <div class="frame_line frame_line-top"></div>
+      <div class="frame_line frame_line-bottom"></div>
+    </div>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <a href="index.html">Home</a>
+          <span> // </span>
+          <a href="#projects">Projects</a>
+          <span> // </span>
+          <a href="https://www.linkedin.com/in/rei-sikk-a642b9218/" target="_blank">LinkedIn</a>
+        </nav>
+        <div class="header_left">
+          <h2 class="long_header">13C.01.02 Working with colors and animations</h2>
+          <a href="#" target="_blank" class="headline"><span>//</span> Link to the solution</a>
+        </div>
+        <div class="subpage_intro" id="intro">
+          <h4 class="desc_heading">About the solution</h3>
+          <p>
+           For this assignment I created a color scheme with 4 colors using HueMint. I used a dark purple and white as my primary colors with a strong pink color as an accent color to use for links and CTA's. I used a color contrast checker to validate the text's readability with light - and darkmode. To implement dark mode I used CSS variables and Local storage which I implemented through JavaScript. In terms of animations I added scroll-triggered animations for sections and a "progress bar" animation using MotionOne animation framework. 
+          </p>
+        </div>
+      </header>
+      <main>
+        <article id="mockups">
+          <h2>Mockups</h2>
+          <div class="mockup_wrapper">
+            <h3>Light mode</h3>
+          <img src="/media/lightmode.jpg" alt="mockups in light mode">
+            <h3>Dark mode</h3>
+          <img src="/media/darkmode.jpg" alt="mockups in dark mode">
+          <div class="mobile_wrapper">
+          <h3>Mobile</h3>
+          <img class="mobile_mockup" src="/media/lightmodeMobilemobile.png" alt="mobile view">
+          </div>
+          <div class="tablet_wrapper">
+          <h3>Tablet</h3>
+          <img class="tablet_mockup" src="/media/tabletDarkmodetablet.png" alt="tablet view">
+          </div>
+          </div>
+          </article>
+          <article id="visual_details">
+            <h2>Visual Details</h2>
+            <img src="/media/visDetailsColors.svg" alt="visual details">
+          </article>
+      </main>
+    </div>
+  </body>
   <script type="module" src="script.js"></script>
 </html>

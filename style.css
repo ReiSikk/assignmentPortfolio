@@ -409,10 +409,14 @@ footer p {
   flex-wrap: wrap;
   gap: 2rem;
 }
-#mockups,
+#mockups h2,
 #visual_details h2 {
   padding-bottom: var(--spacing-medium);
 }
+#visual_details h2 {
+  padding-top: var(--spacing-xlarge);
+}
+
 @media only screen and (max-width: 699px) {
   .mobile_mockup {
     width: 100%;
@@ -421,4 +425,13 @@ footer p {
     width: 100%;
   }
 }
-/* !Fonts and Ui components subpage ends */ ;
+/* !Fonts and Ui components subpage ends */
+
+/* ! Colors and animations subpage starts */
+.long_header {
+  max-width: 66vw;
+}
+.mockup_wrapper h3 {
+  padding-top: 1rem;
+}
+/* ! Colors and animations subpage ends */ ;
