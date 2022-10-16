@@ -291,6 +291,10 @@ header h1 {
 #introduction {
   padding-top: var(--spacing-large);
 }
+#intro h4,
+#introduction h4 {
+  padding-bottom: var(--spacing-xsmall);
+}
 .desc_heading {
   padding-bottom: var(--spacing-small);
 }
