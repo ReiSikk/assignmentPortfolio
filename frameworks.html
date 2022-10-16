@@ -6,12 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- typefaces -->
-    <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,200,300,100,600&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-    <title>Designing with Frameworks</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,200,300,100,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Frameworks</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mask" id="mask">
+      <div class="mask_top"></div>
+      <div class="mask_bottom"></div>
+    </div>
+    <div class="frame" id="frame">
+      <div class="frame_line frame_line-left"></div>
+      <div class="frame_line frame_line-right"></div>
+      <div class="frame_line frame_line-top"></div>
+      <div class="frame_line frame_line-bottom"></div>
+    </div>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <a href="index.html">Home</a>
+          <span> // </span>
+          <a href="index.html#projects">Projects</a>
+          <span> // </span>
+          <a href="https://www.linkedin.com/in/rei-sikk-a642b9218/" target="_blank">LinkedIn</a>
+        </nav>
+        <div class="header_left">
+          <h2 class="long_header">13C.02.02 Designing with frameworks</h2>
+          <a href="https://reisikk.github.io/designForDevsExercises/13c.02.01.responsive-design/index.html" target="_blank" class="headline"><span>//</span> Link to the solution</a>
+        </div>
+        <div class="subpage_intro" id="intro">
+          <h4 class="desc_heading">About the solution</h3>
+          <p>
+          To solve this assignment I chose to use the CSS framework called Pico. Using Pico allowed me to quickly and conveniently make the website responsive using their pre-made classes for layouting. Along with the layouting classes Pico provides I used their buttons which made it easy to have consistently styled buttons. As the assignment was to design a responsive website I also added a burger menu navigation when the viewport scales down to a mobile size. The overall layout uses a classic column drop layout patter so that as the viewport gets smaller the grid columns stack on top of each other resulting in a single column view on the mobile. 
+          </p>
+        </div>
+      </header>
+      <main>
+        <article id="mockups">
+          <h2>Mockups</h2>
+          <div class="mockup_wrapper">
+          <img src="/media/resDesMock.png" alt="mockups">
+          <div class="mobile_wrapper">
+          <h3>Mobile</h3>
+          <img class="mobile_mockup" src="/media/resDesMobile.png" alt="mobile view">
+          </div>
+          <div class="tablet_wrapper">
+          <h3>Tablet</h3>
+          <img class="tablet_mockup" src="/media/resDesTablet.png" alt="tablet view">
+          </div>
+          </div>
+          </article>
+          <article id="visual_details">
+            <h2>Visual Details</h2>
+            <img src="/media/resDes.svg" alt="visual details">
+          </article>
+      </main>
+    </div>
+  </body>
   <script type="module" src="script.js"></script>
 </html>

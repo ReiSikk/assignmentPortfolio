@@ -37,6 +37,7 @@ p {
   font-weight: 400;
   font-size: 1.125rem;
   max-width: 62ch;
+  letter-spacing: 0.75px;
 }
 a {
   text-decoration: none;
@@ -99,6 +100,9 @@ h4 {
 h5 {
   font-size: 1.333rem;
 }
+.hidden {
+  display: none;
+}
 .wrapper {
   padding-left: var(--spacing-large);
   padding-right: var(--spacing-large);
@@ -119,11 +123,18 @@ nav {
   justify-content: center;
   gap: var(--spacing-small);
   padding-top: var(--spacing-small);
+  padding-bottom: var(--spacing-medium);
 }
 
 /* ?nav styles end */
 
 /* ?scroller icon begins */
+
+@media only screen and (max-width: 1200px) {
+  .mouse_container {
+    display: none;
+  }
+}
 .mouse_btn {
   margin: 10px auto;
   width: 40px;
@@ -175,8 +186,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: var(--spacing-xsmall);
-  margin-top: 12vh;
+  padding-bottom: var(--spacing-xlarge);
+  margin-top: 10vh;
 }
 
 /* ?scroller icon ends  */
@@ -285,18 +296,29 @@ header h1 {
 /* ?projects section starts */
 .project_wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--spacing-small);
   padding-top: var(--spacing-medium);
   padding-bottom: var(--spacing-medium);
 }
-
+@media only screen and (max-width: 1060px) {
+  .project_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .project_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .project_card {
-  min-height: 350px;
+  max-height: 50vh;
+  width: 100%;
   position: relative;
   border-radius: var(--bradius-cards);
   box-shadow: 15px 15px 30px #1e1c20, -15px -15px 10px #1a191d;
 }
+
 .project_card h3 {
   opacity: 0;
   pointer-events: none;
@@ -432,6 +454,7 @@ footer p {
   max-width: 66vw;
 }
 .mockup_wrapper h3 {
-  padding-top: 1rem;
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-small);
 }
 /* ! Colors and animations subpage ends */ ;
