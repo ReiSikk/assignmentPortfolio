@@ -34,6 +34,8 @@ html {
   --bradius-cards: 3.5px;
 }
 p {
+  font-weight: 400;
+  font-size: 1.125rem;
   max-width: 62ch;
 }
 a {
@@ -47,6 +49,8 @@ body {
   overflow-x: hidden;
   max-width: 1440px;
   scroll-behavior: smooth;
+  margin-left: auto;
+  margin-right: auto;
 }
 ::-moz-selection {
   /* Code for Firefox */
@@ -270,8 +274,12 @@ header h1 {
   font-size: 5.653rem;
 }
 #intro {
-  padding-top: var(--spacing-medium);
+  padding-top: var(--spacing-large);
 }
+.desc_heading {
+  padding-bottom: var(--spacing-small);
+}
+
 /* ?header section ends  */
 
 /* ?projects section starts */
@@ -388,5 +396,29 @@ footer p {
 .headline span {
   color: var(--color-primary-text);
 }
-
-/* !Fonts and Ui components subpage ends */
+.mobile_mockup {
+  width: 25%;
+  object-fit: cover;
+}
+.tablet_mockup {
+  width: 35%;
+  object-fit: cover;
+}
+.mockup_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#mockups,
+#visual_details h2 {
+  padding-bottom: var(--spacing-medium);
+}
+@media only screen and (max-width: 699px) {
+  .mobile_mockup {
+    width: 100%;
+  }
+  .tablet_mockup {
+    width: 100%;
+  }
+}
+/* !Fonts and Ui components subpage ends */ ;
